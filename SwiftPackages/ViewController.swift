@@ -9,10 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var scrollView:CustomScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        scrollView = CustomScrollView(rootView: self.view, axis: .horizontal, distribution: .fill, spacing: 10)
     }
 
 
